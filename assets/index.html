@@ -1,0 +1,2314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="COVA, a protocol from Covalent Foundation, allows creation of privacy-preserving python dApps to transfer and utilize data as capital using TEE and blockchain."/>
+    <meta name="robots" content="index, follow" />
+    <!-- SITE TITLE -->
+    <title>COVA: Smart Contract for Data</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Latest Bootstrap min CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- ionicons CSS -->
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <!--- owl carousel CSS-->
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/spop.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style_181220.css">
+    <link rel="stylesheet" href="assets/css/responsive_181220.css">
+    <link rel="stylesheet" href="assets/css/responsive-custom_181220.css">
+    <!-- Color CSS -->
+    <link id="layoutstyle" rel="stylesheet" href="assets/color/theme-green.css">
+    <!-- Prism CSS -->
+    <link rel="stylesheet" href="assets/css/prism.css">
+    <!-- Hover CSS -->
+    <link rel="stylesheet" href="assets/css/hover_181220.css">
+    <!-- Font Awesome v5.5.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- JQuery UI -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <style>
+        .single_roadmap
+        {
+            padding: 0 0 20px 50px;
+            position: relative;
+        }
+
+        .roadmap_list .col-lg:nth-child(2n+1) .single_roadmap
+        {
+            padding: 0 0 20px 50px;
+            position: relative;
+        }
+
+        .single_roadmap::after
+        {
+            content: normal;
+        }
+
+        .single_roadmap h6
+        {
+            position: static;
+            top: auto;
+        }
+
+        .single_roadmap .roadmap_icon
+        {
+            margin: 0;
+            top: 10px;
+        }
+
+        .roadmap_list .col-lg:nth-child(2n) .single_roadmap .roadmap_icon
+        {
+            bottom: auto;
+            top: 10px;
+        }
+
+        .roadmap_list .col-lg:nth-child(2n) .single_roadmap::before
+        {
+            bottom: auto;
+            top: 42px;
+        }
+
+        .single_roadmap::before
+        {
+            height: calc(100% - 40px);
+            left: 10px;
+            top: 42px;
+            -moz-transform: translateX(0%);
+            -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+        }
+
+        .roadmap_list
+        {
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        .col-lg
+        {
+            flex-basis: auto
+        }
+    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom_181220.css">
+
+</head>
+
+<body class="bg_light">
+
+<!-- START LOADER -->
+<div id="loader-wrapper">
+    <div id="loading-center-absolute">
+        <!--<div class="object" id="object_four"></div>
+        <div class="object" id="object_three"></div>
+        <div class="object" id="object_two"></div>
+        <div class="object" id="object_one"></div>-->
+        <img src="assets/images/cova_loader.svg"/>
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
+<!-- END LOADER -->
+
+<!-- START HEADER -->
+<header class="header_wrap fixed-top">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand page-scroll animation" href="#home" data-animation="fadeInDown"
+               data-animation-delay="0s">
+                <!--<img class="logo_light" src="assets/images/logo_sm.svg" alt="logo"/>-->
+                <img class="logo_light" src="assets/images/logo_sm.svg" alt="logo"/>
+            </a>
+
+            <ul class="nav_btn align-items-center img_md_show img_lg_hide" id="nav_lang_btn_mobile" style="margin-left:-15px;">
+                <li class="animation" data-animation="fadeInDown" data-animation-delay="0s">
+                    <div class="lng_dropdown">
+                        <select name="countries" id="lng_select_mobile">
+                            <option selected="selected" value='us' data-image="assets/images/eng_flage.png"
+                                    data-title="United States">ENG
+                            </option>
+                            <option value='zh' data-image="assets/images/chn_flage.png" data-title="China">中文
+                            </option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+
+            <button class="navbar-toggler animation" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation" data-animation="fadeInDown" data-animation-delay="0s">
+                <span class="ion-android-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav m-auto">
+
+                    <li class="animation us" data-animation="fadeInDown" data-animation-delay="0s"><a
+                            class="nav-link page-scroll nav_item active" href="#home" id="home_nav">Home</a></li>
+                    <li class="animation zh" data-animation="fadeInDown" data-animation-delay="0s"><a
+                            class="nav-link page-scroll nav_item active" href="#home" id="home_nav_zh">主页</a></li>
+
+                    <li class="animation us" data-animation="fadeInDown" data-animation-delay="0.2s"><a
+                            class="nav-link page-scroll nav_item" href="#tech" id="tech_nav">Technology</a></li>
+                    <li class="animation zh" data-animation="fadeInDown" data-animation-delay="0.2s"><a
+                            class="nav-link page-scroll nav_item" href="#tech" id="tech_nav_zh">技术</a></li>
+
+                    <li class="animation us" data-animation="fadeInDown" data-animation-delay="0.4s"><a
+                            class="nav-link page-scroll nav_item" href="#team" id="team_nav">Team</a></li>
+                    <li class="animation zh" data-animation="fadeInDown" data-animation-delay="0.4s"><a
+                            class="nav-link page-scroll nav_item" href="#team" id="team_nav_zh">团队</a></li>
+
+                    <li class="animation us" data-animation="fadeInDown" data-animation-delay="0.6s"><a
+                            class="nav-link page-scroll nav_item" href="#media" id="media_nav">Media</a></li>
+                    <li class="animation zh" data-animation="fadeInDown" data-animation-delay="0.6s"><a
+                            class="nav-link page-scroll nav_item" href="#media" id="media_nav_zh">媒体</a></li>
+
+                    <li class="animation us" data-animation="fadeInDown" data-animation-delay="0.8s"><a
+                            class="nav-link page-scroll nav_item" href="#contact" id="contact_nav">Contact</a></li>
+                    <li class="animation zh" data-animation="fadeInDown" data-animation-delay="0.8s"><a
+                            class="nav-link page-scroll nav_item" href="#contact" id="contact_nav_zh">联系我们</a></li>
+
+                    <li class="animation us" data-animation="fadeInDown" data-animation-delay="1s"><a
+                            class="nav-link page-scroll nav_item" href="#blog" id="blog_nav">Blog</a></li>
+                    <li class="animation zh" data-animation="fadeInDown" data-animation-delay="1s"><a
+                            class="nav-link page-scroll nav_item" href="#blog" id="blog_nav_zh">博客</a></li>
+
+                    <li class="animation us" data-animation="fadeInDown" data-animation-delay="1.2s"><a
+                            class="nav-link page-scroll nav_item" href="#testnet" id="testnet_nav">Testnet</a></li>
+                    <li class="animation zh" data-animation="fadeInDown" data-animation-delay="1.2s"><a
+                            class="nav-link page-scroll nav_item" href="#testnet" id="testnet_nav_zh">测试网络</a></li>
+
+                    <li class="animation us" data-animation="fadeInDown" data-animation-delay="1.4s"><a
+                            class="nav-link page-scroll nav_item" href="#covachain" id="covachain_nav">CovaChain</a>
+                    </li>
+                    <li class="animation zh" data-animation="fadeInDown" data-animation-delay="1.4s"><a
+                            class="nav-link page-scroll nav_item" href="#covachain" id="covachain_nav_zh">Cova 链</a></li>
+
+                </ul>
+                <ul class="navbar-nav nav_btn align-items-center" id="nav_lang_btn">
+                    <li class="animation" data-animation="fadeInDown" data-animation-delay="0s">
+                        <div class="lng_dropdown">
+                            <select name="countries" id="lng_select">
+                                <option selected="selected" value='us' data-image="assets/images/eng_flage.png"
+                                        data-title="United States">ENG
+                                </option>
+                                <option value='zh' data-image="assets/images/chn_flage.png" data-title="China">中文
+                                </option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- END HEADER -->
+
+<!-- START HEADING SECTION BANNER -->
+<section id="home" class="section_banner blue_light_bg banner_shape" data-z-index="1" data-bleed="-40"
+         data-parallax="scroll">
+    <div id="banner_bg_effect" class="banner_effect"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 order-lg-first">
+                <div class="animation text-center animation" data-animation="fadeInDown" data-animation-delay="0.3s">
+                    <!--<img src="assets/images/cova-geometric-logo.svg" alt="Cova Logo"
+                         class="cova_graphical_logo_big cova_md_graphical_logo_big" />-->
+                    <img src="assets/images/cova_geo_logo_hover_anim.svg" alt="Cova Logo" id="cova_geometric_logo"
+                         class="cova_graphical_logo_big cova_md_graphical_logo_big" />
+                </div>
+                <div class="animation text-center animation " data-animation="fadeInUp" data-animation-delay="0.4s">
+                    <img src="assets/images/cova-logo.svg" alt="Cova Logo" class="cova_logo_big cova_md_logo_big"/>
+                </div>
+                <div class="banner_text text_md_center text-center">
+                    <h5 class="animation cova_logo_title text-white us" data-animation="fadeInUp"
+                        data-animation-delay="0.5s">Smart Contract for Data</h5>
+                    <h5 class="animation cova_logo_title text-white zh" data-animation="fadeInUp"
+                        data-animation-delay="0.5s">为数据而生的智能合约</h5>
+
+                </div>
+                <!--<div class="box_wrap_noshadow animation text-center" data-animation="fadeInDown" data-animation-delay="0s">-->
+                <!--<a href="https://www.youtube.com/watch?v=KYMddDJPVI8" class="video play_btn"><span class="play_icon"></span></a>-->
+                <!--</div>-->
+                <div class="cova_logo_subtitle_banner banner_text text_md_center text-center us">
+                    <div class="cova_logo_subtitle_link_wrapper hvr-float us" style="display: inline-block">
+                    <a href="https://www.youtube.com/watch?v=KYMddDJPVI8" class="video">
+                        <span class="animation cova_logo_subtitle text-white " data-animation="fadeInDown"
+                              data-animation-delay="0.7s">
+                            <span class="align-middle hvr-underline-from-left-custom">
+                                <i class="fa fa-play-circle header-play-icon align-middle"></i>
+                                <span class="cova_logo_subtitle_text">What is COVA?</span>
+                            </span>
+                        </span>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="cova_logo_subtitle_banner banner_text text_md_center text-center zh">
+                    <div class="cova_logo_subtitle_link_wrapper hvr-float zh" style="display: inline-block" >
+                        <a href="https://v.qq.com/x/page/k08020rcvug.html" class="video">
+                        <span class="animation cova_logo_subtitle text-white " data-animation="fadeInDown"
+                              data-animation-delay="0.7s">
+                            <span class="align-middle hvr-underline-from-left-custom">
+                                <i class="fa fa-play-circle header-play-icon align-middle"></i>
+                                <span class="cova_logo_subtitle_text">观看宣传影片?</span>
+                            </span>
+                        </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!--<div class="banner_text text_md_center text-center mb-4 animate-hover-grow">-->
+                <!--<a href="https://www.youtube.com/watch?v=KYMddDJPVI8" class="video">-->
+                <!--<span class="animation btn btn-border mr-2" data-animation="fadeInDown" data-animation-delay="0s"><i class="ion-play"></i></span>-->
+                <!--<span class="animation cova_logo_subtitle align-middle text-white" data-animation="fadeInDown" data-animation-delay="0s">What is COVA?</span>-->
+                <!--<a href="https://goo.gl/forms/KwQn9zcY0afj6cQR2" class="btn btn-border">What is COVA? <i class="ion-play"></i></a>-->
+                <!--</a>-->
+                <!--</div>-->
+
+                <!--SOCIAL ICONS START-->
+                <div class="row heading-icons-row justify-content-center">
+                    <div class="col-4 pr-0 heading-icons-column">
+                        <div class="heading-icons-wrapper">
+                            <ul class="list_none heading-icons text-center">
+                                <li class="animate-hover-grow-big">
+                                    <a href="https://t.me/covalentofficial" target="_blank" class="animation" data-animation="fadeInDown" data-animation-delay="0.1s">
+                                        <i class="fab fa-telegram"></i>
+                                        <!-- <div class="contact_detail"><span>Telegram</span> -->
+                                        <!-- </div> -->
+                                    </a>
+                                </li>
+
+                                <li class="animate-hover-grow-big">
+                                    <a href="https://github.com/covalent-hq" target="_blank" class="animation" data-animation="fadeInDown" data-animation-delay="0.3s">
+                                        <i class="fab fa-github"></i>
+                                        <!-- <div class="contact_detail"><span>Telegram</span> -->
+                                        <!-- </div> -->
+                                    </a>
+                                </li>
+
+                                <li class="animate-hover-grow-big">
+                                    <a href="https://gitter.im/covalent-hq/" target="_blank" class="animation" data-animation="fadeInDown" data-animation-delay="0.5s">
+                                        <i class="fab fa-gitter"></i>
+                                        <!-- <div class="contact_detail"><span>Telegram</span> -->
+                                        <!-- </div> -->
+                                    </a>
+                                </li>
+
+                                <li class="animate-hover-grow-big">
+                                    <a href="https://medium.com/@covatoken" target="_blank" class="animation" data-animation="fadeInDown" data-animation-delay="0.7s">
+                                        <i class="fab fa-medium"></i>
+                                        <!-- <div class="contact_detail"><span>Medium</span> -->
+                                        <!-- </div> -->
+                                    </a>
+                                </li>
+
+                                <li class="animate-hover-grow-big">
+                                    <a href="https://www.reddit.com/r/Covalent_Official/" target="_blank" class="animation" data-animation="fadeInDown" data-animation-delay="0.9s">
+                                        <i class="fab fa-reddit"></i>
+                                        <!-- <div class="contact_detail"><span>Reddit</span> -->
+                                        <!-- </div> -->
+                                    </a>
+                                </li>
+                                <li class="animate-hover-grow-big">
+                                    <a href="https://twitter.com/covatoken" target="_blank" class="animation" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                        <i class="fab fa-twitter"></i>
+                                        <div class="contact_detail">
+                                            <!-- <span>Twitter</span> -->
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--BUTTON GROUP STARTS-->
+                <div class="btn_group animation text-center heading_buttons_wrapper"
+                     data-animation="fadeInDown" data-animation-delay="0.7s">
+                    <div class="us" style="display: inline" id="testnet_dd_btn">
+
+                        <a class="btn btn-default dropdown-toggle mr-2 mb-2 heading_button us" id="testnet_dd_btn_link"
+                           href="javascript:void(0)" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Join Public Testnet
+                        </a>
+
+                        <div class="dropdown-menu mr-2 mb-2 heading_buttons_dropdown us" id="testnet_dd_btn_dropdown"
+                             aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item us"
+                               href="https://docs.covalent.ai/quick-start/" target="_blank">Quickstart Guide</a>
+                            <a class="dropdown-item us" href="https://testnet-faucet.covalent.ai" target="_blank">Testnet Faucet</a>
+                            <a class="dropdown-item us" href="https://docs.covalent.ai/report-join/" target="_blank">Developers</a>
+                        </div>
+                    </div>
+
+                    <div class="zh" style="display: inline">
+                        <a class="btn btn-default dropdown-toggle mr-2 mb-2 heading_button"
+                           href="javascript:void(0)" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            加入公共测试网络
+                        </a>
+
+                        <div class="dropdown-menu mr-2 mb-2 heading_buttons_dropdown"
+                             aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item zh" href="https://docs.covalent.ai/quick-start/" target="_blank">快速开始</a>
+                            <a class="dropdown-item zh" href="https://testnet-faucet.covalent.ai" target="_blank">测试网络 Faucet</a>
+                            <a class="dropdown-item zh" href="https://docs.covalent.ai/report-join/" target="_blank">开发者指南</a>
+                        </div>
+                    </div>
+
+                    <div class="us" style="display: inline">
+
+                        <a class="btn btn-default dropdown-toggle mr-2 mb-2 heading_button" href="javascript:void(0)"
+                           role="button" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            Join Telegram Group
+                        </a>
+
+                        <div class="dropdown-menu mr-2 mb-2 heading_buttons_dropdown telegram_dropdown"
+                             aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://t.me/covalentofficial" target="_blank">English Group</a>
+                            <a class="dropdown-item" href="https://t.me/covalentchina" target="_blank">Chinese Group</a>
+                        </div>
+
+                    </div>
+
+                    <div class="zh" style="display: inline">
+
+                        <a class="btn btn-default dropdown-toggle mr-2 mb-2 heading_button" href="javascript:void(0)"
+                           role="button" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            加入 Telegram 聊天群组
+                        </a>
+
+                        <div class="dropdown-menu mr-2 mb-2 heading_buttons_dropdown telegram_dropdown"
+                             aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://t.me/covalentofficial" target="_blank">英文群组</a>
+                            <a class="dropdown-item" href="https://t.me/covalentchina" target="_blank">中文群组</a>
+                        </div>
+
+                    </div>
+
+                    <a href="https://github.com/covalent-hq" target="_blank"
+                       class="btn btn-default mr-2 mb-2 check-github-btn heading_button us">Check Covalent GitHub <i
+                            class="ion-ios-arrow-thin-right"></i></a>
+                    <a href="https://github.com/covalent-hq" target="_blank"
+                       class="btn btn-default mr-2 mb-2 check-github-btn heading_button zh">查看 Github 页面 <i
+                            class="ion-ios-arrow-thin-right"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="divider small_divider"></div>-->
+
+
+
+        <div class="row announcement_row animation" data-animation="fadeInDown" data-animation-delay="0.6s">
+            <div class="col-md-12">
+                <div class="announcement_slider owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="announcement_item animation" data-animation="fadeInDown" data-animation-delay="0s">
+                            <div class="announcement_content">
+                                <div class="announcement_text">
+                                    <h6 class="announcement_title"><a
+                                            href="https://medium.com/@covatoken/cova-will-list-on-huobi-global-on-dec-21st-510f84f17f1a">COVA Will List on Huobi Global on Dec. 21st</a>
+                                    </h6>
+                                    <span class="text-capitalize announcement_subtitle announcement_subtitle_align_bottom">Official Blog</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="announcement_item animation" data-animation="fadeInDown" data-animation-delay="0s">
+                            <div class="announcement_content">
+                                <div class="announcement_text">
+                                    <h6 class="announcement_title"><a
+                                            href="https://www.coindeskkorea.com/테라x코밸런트-데이터-안전성-강화-위해-파트너십-체/">COVA Partners with Terra, BitMax, Perlin and Palatine Analytics</a>
+                                    </h6>
+                                    <span class="text-capitalize announcement_subtitle">Coindesk</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="announcement_item animation" data-animation="fadeInDown" data-animation-delay="0s">
+                            <div class="announcement_content">
+                                <div class="announcement_text">
+                                    <h6 class="announcement_title"><a
+                                            href="https://medium.com/@covatoken/open-sourcing-cova-protocol-da7132360de">Open Source Release of COVA Protocol</a>
+                                    </h6>
+                                    <span class="text-capitalize announcement_subtitle">Official Blog</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="announcement_item animation" data-animation="fadeInDown" data-animation-delay="0s">
+                            <div class="announcement_content">
+                                <div class="announcement_text">
+                                    <h6 class="announcement_title">
+                                        <a
+                                            href="https://medium.com/@covatoken/cova-was-invited-to-speak-at-2018-xian-international-workshop-on-blockchain-co-hosted-by-tsinghua-43bc0a926772">COVA was invited to speak at 2018 Xi’an International Workshop on Blockchain
+                                        </a>
+                                    </h6>
+                                    <span class="text-capitalize announcement_subtitle">Official Blog</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="announcement_item animation" data-animation="fadeInDown" data-animation-delay="0s">
+                            <div class="announcement_content">
+                                <div class="announcement_text">
+                                    <h6 class="announcement_title"><a
+                                            href="https://36kr.com/newsflashes/125213">Covalent获千万美金投资，真格基金、节点资本参投</a>
+                                    </h6>
+                                    <span class="text-capitalize announcement_subtitle">36氪</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="announcement_item animation" data-animation="fadeInUp" data-animation-delay="0s">
+                            <div class="announcement_content">
+                                <div class="announcement_text">
+                                    <h6 class="announcement_title"><a
+                                            href="https://www.jinse.com/lives/65777.htm">COVA 入围火币创业板第二期项目名单</a>
+                                    </h6>
+                                    <span class="text-capitalize announcement_subtitle">金色财经</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+<!-- END HEADING SECTION BANNER -->
+
+<!-- START INTRO SECTION -->
+<section class="blue_light_bg banner_shape" data-z-index="1" data-bleed="-40" data-parallax="scroll"
+         data-image-src="assets/images/banner_bg3.png">
+    <!--<div class="divider very_small_divider"></div>-->
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 order-lg-first">
+                <div class="banner_text text_md_center">
+                    <h1 class="animation us header_title_big" data-animation="fadeInUp"
+                        data-animation-delay="0s">COVA is</h1>
+                    <h1 class="animation zh header_title_big" data-animation="fadeInUp"
+                        data-animation-delay="0s">COVA 致力于推进数据资产化</h1>
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">a new paradigm for data to be used as capital. Data is quickly becoming the most important asset in the world, yet currently there is no infrastructure to control how it is used. COVA provides a unique solution to this dilemma and allows data owners to take advantage of the commodification of data</p>
+                    <p class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">
+                        人类定义物质产权、修路建桥等其他基础设施，为的是让自然资源成为有价值的通货。
+                        数据正在成为人类社会最重要的资源。然而，落后的产权定义和基础设施使得数据的通货化难以落地。现有的互联网协议为人类带来了端对端的数据传输，规定了数据被封装、传输、路由、接收的标准，却并未规定它们应当如何被使用。
+                        「COVA 协议」因此而生。
+                    </p>
+
+                    <div class="btn_group animation" data-animation="fadeInDown" data-animation-delay="0s">
+                        <a href="https://github.com/covalent-hq/wiki/wiki" target="_blank" class="btn btn-default">GitHub/Whitepaper <i
+                                class="ion-ios-arrow-thin-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="divider small_divider"></div>-->
+
+    </div>
+    </div>
+    <div class="divider medium_divider"></div>
+    <div class="angle_bottom"></div>
+</section>
+<!-- END INTRO SECTION -->
+
+
+<!-- START DATA CONTROL SECTION -->
+<section class="about_shape_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="title_default_dark title_border">
+                    <h4 class="animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">We need a way to control how data is used</h4>
+                    <h4 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">重新定义人类对于数据的掌控权</h4>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Over 90% of data produced in the world today remains locked up in data silos due to concerns about privacy. Once data is shared, owners lose control over how data is used and often jeopardize sensitive information.</p>
+                    <p class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">
+                        在现有基础设施环境下，数据拥有者无法控制自身资产如何被使用。无数的隐私泄露、知识产权窃取事件告诉我们：一旦将数据交由第三方使用，基本等于交出了所有权。
+                        这导致了 90% 的数据被锁在「信息孤岛」中，价值巨大却深埋地下。这些数据中既有隐私，又有重要商业价值。只要我们拥有合理的工具，在保证隐私的情况下挖掘这批存量资源，对数据进行运算、交易，就能让它展现更大的价值。
+                        人类在 1846 年发明了第一座现代化油井。今天的我们，又应该如何解决数据的开采？
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="divider very_small_divider"></div>
+        <div class="row align-items-center">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="title_default_dark title_border">
+                    <h4 class="animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">For data to be transacted as capital</h4>
+                    <h4 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">自由流通，便捷交易</h4>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Data transferred through the COVA protocol can be protected even after access has been granted. COVA powers Smart Policies which enable data owners to allow their data to be accessed, and transacted while prohibiting undesirable privacy-compromising inferences. By empowering data owners without sacrificing the freedom of data transfer, Smart Policies give data property rights and enable it to be transacted as capital.</p>
+                    <p class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">
+                        COVA 协议首创的 Smart Policy（智能条款）将改变这一点。即便将数据交由第三方使用，用户仍对其保有 100% 控制权，可以规定它应该以何种方式被访问、交易，防止隐私泄露。在保证数据自由流动的情况下，智能条款将赋予数据拥有者真正的物权，从而推动数据通货化交易。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-12 col-sm-12 img_md_show img_lg_hide">
+                <div class="mb-5 mt-4 text-center animation" data-animation="fadeInRight"
+                     data-animation-delay="0s">
+                    <img src="assets/images/about_img.png" alt="diagram"/>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12">
+                <div class="title_default_dark title_border">
+                    <h4 class="animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">Reclaim control of your data</h4>
+                    <h4 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">数据拥有者：夺回数据资产的控制权</h4>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">COVA protocol is a new addition to the internet protocol suite that creates a web of secure and trusted execution. On COVA, data can be controlled with a Smart Policy: a data usage policy written in code that defines and enforces how it can be used.</p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">作为现有互联网协议的补充，COVA 将创造一个安全、可信任的数据传输环境。在 COVA 协议下，数据产生者可以附加一个智能条款（Smart Policy），从而规定他人如何使用数据，并确保在该条款上运行的程序遵守该条款。</p>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Data is safely transacted and processed inside a secure enclave by a swarm of TEE nodes equipped with Intel Software Guard Extensions (SGX), which prevent the host from being able to see your data or tamper with execution of code. COVA uses the guarantee from the processor-level security to implement self-protecting data with Smart Policies.</p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">在可信任执行环境（TEE）节点和 Intel® SGX 等技术的支持下，数据可在安全区域（Secure Enclave）中完成传输。第三方使用者将无法查看数据或者篡改用于处理数据的代码。由处理器级别开始，智能条款（Smart Policy）就能帮助数据实现自我保护。</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-sm-12 img_md_hide img_lg_show">
+                <div class="mb-5 text-center animation" data-animation="fadeInRight"
+                     data-animation-delay="0s">
+                    <img src="assets/images/about_img.png" alt="diagram"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-12 col-sm-12">
+                <div class="mb-5 mt-2 text-center animation" data-animation="fadeInLeft"
+                     data-animation-delay="0s">
+                    <img src="assets/images/investment_network.png" alt="diagram"/>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12">
+                <div class="title_default_dark title_border">
+                    <h4 class="animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">Discover a wealth of previously inaccessible data</h4>
+                    <h4 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">数据使用者：发现脚下的金矿</h4>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">COVA is partnering with several institutions such as hospitals and financial institutions, to open up a market of data previously locked up in data silos due to privacy concerns.</p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">COVA 正在与数家医疗、金融机构展开合作，利用智能条款保证优质数据供给渠道安全畅通。</p>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">COVA is the only data privacy project to support the entire scientific computing stack of python—including Numpy, Scipy, Scikit-learn, and Pandas on SGX. Data scientists can organically integrate their existing models with data on COVA and use tools familiar to them, including much of the Python ecosystem.</p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">COVA 充分挖掘技术潜力，使得在 Intel® SGX 上运行包括 Numpy、Scipy、Scikit-learn 在内的 Python 科学计算工具成为可能。对于数据科学家而言，他们可以将现有的数据模型无缝接入 COVA，并使用熟悉的工具，进一步提高分析效率。</p>
+
+                    <p class="animation us" style="padding-bottom: 0!important; margin-bottom: 0 !important;"
+                       data-animation="fadeInUp"
+                       data-animation-delay="0s">This enables data owners to enforce privacy-preserving computation, create transparent, uncircumventable DRM, and define property rights for data, alongside many other applications that have not yet been conceived, all without the lofty impracticality of Fully Homomorphic Encryption (FHE) or Secure Multi Party Computation (MPC).</p>
+                    <p class="animation zh" style="padding-bottom: 0!important; margin-bottom: 0 !important;"
+                       data-animation="fadeInUp"
+                       data-animation-delay="0s">相比同态加密（FHE）、安全多方计算（MPC），COVA 采取的技术手段拥有更好的落地性。即便经过计算处理，数据拥有者也能确保自身资产及隐私不被泄露。数据物权的确认，更为透明、可靠的数据版权管理（DRM）也将变得指日可待。</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="rounded_shape"></div>
+</section>
+<!-- END DATA CONTROL SECTION -->
+
+<!-- START TECHNOLOGY SECTION -->
+<section id="tech" class="section_token blue_light_bg" data-z-index="1" data-bleed="-40" data-parallax="scroll"
+         data-image-src="assets/images/token_bg.png">
+    <div class="divider medium_small_divider img_md_hide img_lg_show"></div>
+    <div class="divider medium_divider img_md_show img_lg_hide"></div>
+    <div class="angle_top"></div>
+    <!--<div class="divider large_divider"></div>-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="title_default_light title_border text_md_center">
+                    <h1 class="animation text-white header_title_big us" style="font-weight: bold; margin-bottom: 30px;"
+                        data-animation="fadeInUp" data-animation-delay="0s">Technology</h1>
+                    <h1 class="animation text-white header_title_big zh" style="font-weight: bold; margin-bottom: 30px;"
+                        data-animation="fadeInUp" data-animation-delay="0s">技术</h1>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Powering the COVA network is a substrate of TEE nodes that run COVA software, and provide the horsepower of secured and trusted execution. All data and code that is processed by the COVA network are securely pieced together, hidden and protected inside an enclave. Smart Policies are written in Centrifuge, and provide data owners with a new tool in their arsenal to prevent their precious data from being abused.</p>
+
+                    <p class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">
+                        同样是赋予用户数据控制权，COVA 是首个提供软件+硬件结合的项目。其他项目不是只开发硬件环境（TEE 网络），或者只依赖于软件（MPC，ZKP）。
+                        COVA 的硬件环境包括了众多 TEE 节点。基金会利用 Token 机制激励更多的 TEE 节点加入我们的网络，为我们提供可不断扩展的可信算力。这些可信算力确保 「监督程序」的行为没有安全隐患。它们将成为定义和执行智能条款的工具的底层架构。在安全区域（Secure Enclave）中，所有运行在 COVA 网络上的数据、代码将被安全地分割、隐藏，并得到保护。
+                        为了让机器理解自然语言语义，懂得如何根据数据拥有者意志保护数据，COVA 开发了 Centrifuge 程序语言。Centrifuge 是一种条款规范语言（Policy Specification Language，PSL）。它将人类的数据使用规范转化为可执行的代码，即「智能条款」。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divider small_divider img_md_hide img_lg_show"></div>
+    <div class="divider medium_divider img_md_show img_lg_hide"></div>
+    <div class="angle_bottom"></div>
+</section>
+<!-- END TECHNOLOGY SECTION -->
+
+<!-- START CENTRIFUGE SECTION -->
+<section class="about_shape_bg" style="padding-bottom: 0px;">
+    <div class="container">
+
+        <div class="row align-items-center">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="title_default_dark title_border">
+                    <h4 class="animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">COVA Protocol: A Four Layer Solution</h4>
+                    <h4 class="animation zh" data-animation="fadeInUp"
+                        data-animation-delay="0s">为智能条款而生的程序语言</h4>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 img_md_hide img_lg_show" style="margin-bottom: 20px !important;">
+                <div class="text-center">
+                    <img src="assets/images/cova_protocol_layers_anim_begin_old.svg" id="svg_layer_animated">
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 img_md_show img_lg_hide" style="margin-bottom: 20px !important;">
+                <div class="text-center animation" data-animation="fadeInDown"
+                     data-animation-delay="0s">
+                    <img src="assets/images/layers_md.svg" style="max-width: 350px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="title_default_dark title_border">
+                    <h4 class="animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">Introducing Centrifuge, a language for Smart Policies</h4>
+                    <h4 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">
+                        为智能条款而生的程序语言
+                    </h4>
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Centrifuge bridges semantic notions from natural language to machine-enforceable policy code.<br>With Centrifuge, you can write smart policies that:
+                    </p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">可以让机器理解自然语言语义，将其转化为可执行的代码。通过 Centrifuge，你可以编写智能策略，达成以下目的：</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="title_default_dark">
+                    <h5 class="animation section_subtitle us" data-animation="fadeInUp"
+                        data-animation-delay="0s">Enforce privacy-preserving computation</h5>
+                    <h5 class="animation section_subtitle zh" data-animation="fadeInUp"
+                        data-animation-delay="0s"> 实施隐私保护计算</h5>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Data silos come about from a large dataset containing sensitive information that can't be leaked. However, these datasets may contain potential for important insights beyond what data owners are able to imagine.</p>
+                    <p class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">
+                        数据中既有隐私，又有重要商业价值。Centrifuge 可以在保证用户隐私的情况下对数据进行运算。由此，数据孤岛将被打破，让潜藏于地下的财富浮出水面。
+                    </p>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">By opening up data silos to an open market of analysts that have ideas on how to exploit the data, COVA enables data owners to be compensated for their data, and allow them to regulate the types of inferences that people can make on the data, by writing policies that enforce consuming computation to use k-anonymity or differential privacy.</p>
+                    <p class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">
+                        通过编写智能条款（Smart Policy），强制使用者采用 k-匿名性（k-anonymity） 或差分隐私（Differential Privacy），数据拥有者可以可以限制他人对于数据的更改、破坏。
+                    </p>
+                    <p class="animation" data-animation="fadeInDown" data-animation-delay="0s">
+                    <pre id="preSmartData" class="animation" data-animation="fadeInDown" data-animation-delay="0s"><code
+                            id="codeCreateSmartData" class="language-python"></code></pre>
+                    </p>
+
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="title_default_dark">
+                    <h5 class="animation section_subtitle us" data-animation="fadeInUp"
+                        data-animation-delay="0s">Create transparent forms of Digital Rights Managements</h5>
+                    <h5 class="animation section_subtitle zh" data-animation="fadeInUp"
+                        data-animation-delay="0s">创建透明的数字版权管理（DRM）</h5>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Digital Rights Managements is currently a mess, with thousands of custom solutions created by different companies. It is hard to keep track of what one can and can’t do, as the DRM policies are often restrictive, opaque, and embedded within the actual data itself. COVA lets data owners write policies that are transparent (policies are public), do not corrupt the actual data, can be enforced without fail, and extend beyond just copyrighted music and art.</p>
+                    <p class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">
+                        由于存在多种解决方案，目前的数字版权管理（DRM）生态极为混乱。大多数字版权管理政策具有限制性强、不透明、捆绑于数据等特点，这大大加剧其使用难度。
+                        开放的 COVA 协议，使得数据所有者可以编写透明的智能条款作为数据使用政策。该政策不会破坏数据本身，且失败率极低。
+                    </p>
+                    <p class="animation" data-animation="fadeInDown" data-animation-delay="0s">
+                    <pre id="prePolicy" class="animation" data-animation="fadeInDown" data-animation-delay="0s"><code
+                            id="codeCreatePolicy" class="language-python"></code></pre>
+                    </p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">
+                        更多内容请查看 <a href="https://docs.covalent.ai/tutorials/application/" target="_blank"> 帮助文档 </a>
+                    </p>
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">
+                        More on this <a href="https://docs.covalent.ai/tutorials/application/" target="_blank"> tutorial </a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rounded_shape"></div>
+</section>
+
+<!-- END CENTRIFUGE SECTION -->
+
+<!-- START ROADMAP SECTION -->
+<section class="blue_light_bg" data-bleed="-40" data-z-index="1" data-parallax="scroll"
+         data-image-src="assets/images/roadmap_bg2.png">
+    <div class="angle_top"></div>
+    <div class="divider large_divider"></div>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <div class="title_default_light title_border text-left">
+                    <h4 class="animation us" data-animation="fadeInUp" data-animation-delay="0s">Roadmap</h4>
+                    <h4 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">路线图</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row roadmap_list small_space align-items-end">
+            <div class="col-lg">
+                <div class="single_roadmap roadmap_done">
+                    <div class="roadmap_icon"></div>
+                    <h6 class="animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">1Q18 Ideation & Research</h6>
+                    <h6 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">2018 年一季度：构想与研究</h6>
+
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Executive whitepaper published</p>
+                    <p class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">发布执行白皮书</p>
+
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="single_roadmap roadmap_done">
+                    <div class="roadmap_icon"></div>
+                    <h6 class="animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">May 2018 Technical Whitepaper Published</h6>
+                    <h6 class="animation zh" data-animation="fadeInUp"
+                        data-animation-delay="0s">2018 年 5 月：发布技术白皮书</h6>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Initial PoC of COVA Medical Data marketplace (MEData) completed</p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">完成对于 COVA 医疗数据市场（MEData）的初始概念验证</p>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Initial research of TEE and COVA VM implementation started</p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">开始初步研究 TEE 和 COVA VM</p>
+
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="single_roadmap roadmap_done">
+                    <div class="roadmap_icon"></div>
+
+                    <h6 class="animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">Jun 2018 Seed Round Funding Completed</h6>
+                    <h6 class="animation zh" data-animation="fadeInUp"
+                        data-animation-delay="0s">2018 年 6 月：完成种子轮融资</h6>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Implementation on TEE and COVA VM started</p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">开始开发 TEE 环境和 COVA VM</p>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">COVA community channels launched</p>
+                    <p class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">COVA 社区频道上线</p>
+
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="single_roadmap roadmap_done">
+                    <div class="roadmap_icon"></div>
+                    <h6 class="animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">Jul 2018 COVA Private Testnet Deployed</h6>
+                    <h6 class="animation zh" data-animation="fadeInUp"
+                        data-animation-delay="0s">2018 年 7 月：上线私有测试网络</h6>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Work on Covalent Policy Language (Centrifuge) started</p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">开始开发智能条款语言 Centrifuge</p>
+
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="single_roadmap roadmap_done">
+                    <div class="roadmap_icon"></div>
+
+                    <h6 class="animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">Aug 2018 Private Sale Round Funding Completed</h6>
+                    <h6 class="animation zh" data-animation="fadeInUp"
+                        data-animation-delay="0s">2018 年 8 月：私募轮融资完成</h6>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Work on Public Testnet started</p>
+                    <p class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">开始开发公共测试网络</p>
+
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="single_roadmap roadmap_done">
+                    <div class="roadmap_icon"></div>
+                    <h6 class="animation us" data-animation="fadeInUp" data-animation-delay="0s">Sept 2018</h6>
+                    <h6 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">2018 年 9 月：概念验证</h6>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Proof-of-concept of Smart Policies with COVA VM through modifications to CPython 2.7</p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">完成通过 COVA VM 实现智能策略的概念验证</p>
+
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="single_roadmap roadmap_done">
+                    <div class="roadmap_icon"></div>
+
+                    <h6 class="animation us" data-animation="fadeInUp" data-animation-delay="0s">Oct 2018</h6>
+                    <h6 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">2018 年 10 月</h6>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Modification to Graphene Library OS started</p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">开始调试 Graphene Libary OS</p>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Successfully ran full python scientific computing stack inside COVA VM (i.e. SGX core OS)</p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">在 COVA VM（即 Intel SGX 核心 OS）内成功运行完整的 Python 科学计算工具</p>
+
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="single_roadmap">
+                    <div class="roadmap_icon"></div>
+
+                    <h6 class="animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">4Q 2018 First exchange listing expected <span
+                            style="font-weight: 400">(May change depending on market conditions)</span></h6>
+                    <h6 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">2018 年四季度（计划中） <span
+                            style="font-weight: 400">登录首个交易所（可能会根据市场情况而变化）</span></h6>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Public testnet MVP release</p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">发布公开测试网络最小可行性方案（MVP）</p>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Start recruiting compute node hosts among community members</p>
+                    <p class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">开始在社区成员中招募计算节点主机</p>
+
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="single_roadmap">
+                    <div class="roadmap_icon"></div>
+                    <h6 class="animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">1Q 2019 Public testnet v2 release <span
+                            style="font-weight: 400">(fully permissionless, out of ETH testnet)</span></h6>
+                    <h6 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">2019 年一季度（计划中）<span
+                            style="font-weight: 400">发布公开测试网络第二版（完全权限，独立于以太坊测试网络）</span></h6>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Add more smart policies beyond basic policies</p>
+                    <p class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">增添更多的智能合约</p>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Deploy system to COVA protocol partners for various projects</p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">为合作伙伴部署 Covalent 协议</p>
+
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="single_roadmap">
+                    <div class="roadmap_icon"></div>
+
+                    <h6 class="animation us" data-animation="fadeInUp" data-animation-delay="0s">2Q 2019</h6>
+                    <h6 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">2019 年二季度（计划中）</h6>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Start work on scaling of Covalent TEE network layer</p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">开始扩展 Covalent TEE 网络层</p>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Start recruiting compute nodes at scale</p>
+                    <p class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">开始大规模招募计算节点</p>
+
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="single_roadmap">
+                    <div class="roadmap_icon"></div>
+                    <h6 class="animation us" data-animation="fadeInUp" data-animation-delay="0s">2H 2019</h6>
+                    <h6 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">2019 年下半年（计划中）</h6>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Collectively surpass computing power of the most powerful supercomputer on the planet (4000+ compute nodes)</p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">招募超过 4000 个计算节点（此算力将超越目前最高速超级计算机）</p>
+
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Sharding and expand routing nodes for further scaling (i.e. support dataset and compute node provision at scale)</p>
+                    <p class="animation zh" data-animation="fadeInUp"
+                       data-animation-delay="0s">扩展路由节点以进一步扩展（大规模支持数据集和计算节点）</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider large_divider"></div>
+    <div class="angle_bottom" style="border-bottom-color: #f1f1f1 !important;"></div>
+
+</section>
+<!-- END ROADMAP SECTION -->
+
+<!-- START TEAM SECTION -->
+<section id="team" class="section_team bg_gray">
+    <div class="angle_top" style="border-top-color: #f1f1f1 !important;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="title_default_dark title_border text-left">
+                    <h4 class="animation us" data-animation="fadeInUp" data-animation-delay="0s">Team</h4>
+                    <h4 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">团队</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row small_space">
+
+            <div class="res_lg_mb_30 col-lg-6 col-md-6 col-sm-6 res_md_mb_30 res_sm_mb_20"
+                 style="margin-bottom: 30px !important;">
+                <div class="animation" data-animation="fadeInUp" data-animation-delay="0s">
+                    <div class="animation" data-animation="fadeInDown" data-animation-delay="0.1s">
+                        <img src="assets/images/stratos-photo.png" alt="placeholder9"/>
+
+                    </div>
+                    <div class="team_info text-left">
+                        <h4 class="text-dark team_member_title">Professor Stratos Idreos</h4>
+                        <h5 class="text-muted team_member_subtitle us">Academic Advisor</h5>
+                        <h5 class="text-muted team_member_subtitle zh">学术顾问</h5>
+                        <img class="mb-1 mt-1 mr-2" src="assets/images/harvard_logo.png" alt="placeholder9"
+                             style="max-width: 140px !important;"/>
+                        <p class="us">Professor of Computer Science @ <b>Harvard University</b><br>
+                                      Leader of Data Systems Laboratory (DASlab) @
+                            <b>Harvard School of Engineering and Applied Sciences</b><br>
+                        </p>
+                        <p class="zh">哈佛大学计算机科学系教授<br>
+                                      哈佛大学工程学与应用科学学院数据系统实验室领头人<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="res_lg_mb_30 col-lg-6 col-md-6 col-sm-6 res_md_mb_30 res_sm_mb_20"
+                 style="margin-bottom: 30px !important;">
+                <div class="animation" data-animation="fadeInUp" data-animation-delay="0s">
+                    <div class="animation" data-animation="fadeInDown" data-animation-delay="0.1s">
+                        <img src="assets/images/ofek-photo.png" alt="placeholder9"/>
+
+                    </div>
+                    <div class="team_info text-left">
+                        <h4 class="text-dark team_member_title">Professor Elie Ofek</h4>
+                        <h5 class="text-muted team_member_subtitle us">Academic Advisor</h5>
+                        <h5 class="text-muted team_member_subtitle zh">学术顾问</h5>
+                        <img class="mb-1 mt-1 mr-2" src="assets/images/harvard_logo.png" alt="placeholder9"
+                             style="max-width: 140px !important;"/>
+                        <img class="mb-1 mt-1" src="assets/images/stanford_logo.png" alt="placeholder9"
+                             style="max-width: 130px !important;"/>
+                        <p class="us">Professor of Marketing @ <b>Harvard Business School</b><br>
+                                      M.A. in Economics and Ph.D in Business @ <b>Stanford University</b><br>
+                                      Former development engineer @ <b>IBM Research</b><br>
+                        </p>
+                        <p class="zh">哈佛商学院市场学教授<br>
+                                      斯坦福大学经济学硕士、商学博士</b><br>
+                                      前 IBM 开发工程师<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="res_lg_mb_30 col-lg-6 col-md-6 col-sm-6 res_md_mb_30 res_sm_mb_20"
+                 style="margin-bottom: 30px !important;">
+                <div class="animation" data-animation="fadeInUp" data-animation-delay="0s">
+                    <div class="animation" data-animation="fadeInDown" data-animation-delay="0.1s">
+                        <img src="assets/images/vincent-photo.png" alt="placeholder9"/>
+
+                    </div>
+                    <div class="team_info text-left">
+                        <h4 class="text-dark team_member_title">Vincent Li</h4>
+                        <h5 class="text-muted team_member_subtitle us">Co-founder</h5>
+                        <h5 class="text-muted team_member_subtitle zh">联合创始人</h5>
+                        <img class="mb-1 mt-1 mr-2" src="assets/images/harvard_logo.png" alt="placeholder9"
+                             style="max-width: 140px !important;"/>
+                        <p class="us">B.A. in Computer Science and Statistics @ <b>Harvard University</b><br>
+                                      Early employee @ <b>Gigster</b> (a16z-invested)<br>
+                                      Former engineer @ <b>Citadel</b><br>
+                        </p>
+                        <p class="zh">本科毕业于哈佛大学计算机科学及统计系<br>
+                                      Gigster（A16Z 投资企业）早期员工<br>
+                                      前 Citadel 工程师<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="res_lg_mb_30 col-lg-6 col-md-6 col-sm-6 res_md_mb_30 res_sm_mb_20"
+                 style="margin-bottom: 30px !important;">
+                <div class="animation" data-animation="fadeInUp" data-animation-delay="0s">
+                    <div class="animation" data-animation="fadeInDown" data-animation-delay="0.1s">
+                        <img src="assets/images/gao-photo.png" alt="placeholder9"/>
+
+                    </div>
+                    <div class="team_info text-left">
+                        <h4 class="text-dark team_member_title">Raymond Gao</h4>
+                        <h5 class="text-muted team_member_subtitle us">Co-founder</h5>
+                        <h5 class="text-muted team_member_subtitle zh">联合创始人</h5>
+                        <img class="mb-1 mt-1 mr-2" src="assets/images/princeton_logo.png" alt="placeholder9"
+                             style="max-width: 140px !important;"/>
+                        <p class="us">M.S in Mechanical and Aerospace Engineering @ <b>Princeton University</b><br>
+                                      B.S. in Applied Physics @ <b>Peking University</b><br>
+                                      Early investor in Conjur (acquired by NASDAQ: CYBR).
+                        </p>
+                        <p class="zh">硕士毕业于普林斯顿大学机械工程与航天工程系<br>
+                                      本科毕业于北京大学应用物理系<br>
+                                      Conjur 早期投资人（后被纳斯达克上市企业 Cyberark 收购）
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="res_lg_mb_30 col-lg-6 col-md-6 col-sm-6 res_md_mb_30 res_sm_mb_20">
+                <div class="animation" data-animation="fadeInUp" data-animation-delay="0s">
+                    <div class="animation" data-animation="fadeInDown" data-animation-delay="0.1s">
+                        <img src="assets/images/zhou-photo.png" alt="placeholder9"/>
+                    </div>
+                    <div class="team_info text-left">
+                        <h4 class="text-dark team_member_title">Shuoji Zhou</h4>
+                        <h5 class="text-muted team_member_subtitle us">Business Advisor</h5>
+                        <h5 class="text-muted team_member_subtitle zh">商务顾问</h5>
+                        <img class="mb-1 mt-1 mr-2" src="assets/images/fbg_logo.png" alt="placeholder9"
+                             style="max-width: 140px !important; "/>
+                        <p class="us">Founder of <b>FBG Capital</b>
+                        </p>
+                        <p class="zh"><b>FBG Capital 创始人</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="res_lg_mb_30 col-lg-6 col-md-6 col-sm-6 res_md_mb_30 res_sm_mb_20">
+                <div class="animation" data-animation="fadeInUp" data-animation-delay="0s">
+                    <div class="animation" data-animation="fadeInDown" data-animation-delay="0.1s">
+                        <img src="assets/images/tian-photo.png" alt="placeholder9"/>
+                    </div>
+                    <div class="team_info text-left">
+                        <h4 class="text-dark team_member_title">Jia Tian</h4>
+                        <h5 class="text-muted team_member_subtitle us">Business Advisor</h5>
+                        <h5 class="text-muted team_member_subtitle zh">商务顾问</h5>
+                        <img class="mb-1 mt-1 mr-2" src="assets/images/bitfin_logo.png" alt="placeholder9"
+                             style="max-width: 140px !important;"/>
+                        <img class="mb-1 mt-1 mr-2" src="assets/images/fbg_logo.png" alt="placeholder9"
+                             style="max-width: 130px !important;"/>
+                        <img class="mb-1 mt-1 mr-2" src="assets/images/zcash2_logo.svg" alt="placeholder9"
+                             style="max-width: 120px !important;"/>
+                        <p class="us">Investor of Bitfinex & Limited Partner of <b>Bitfund</b><br>
+                                      Consultant of <b>FBG Capital</b><br>
+                                      Consultant of <b>Zcash</b>
+                        </p>
+                        <p class="zh">Bitfinex 早期投资人，Bitfund 基金有限合伙人<br>
+                                      FBG Capital 顾问<br>
+                                      Zcash 顾问</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="divider large_divider custom_divider"></div>
+    <div class="angle_bottom"></div>
+</section>
+<!-- END TEAM SECTION -->
+
+<!-- START TECHNICAL CONTRIBUTORS SECTION -->
+<section class="section_team" data-bleed="-40" data-z-index="1" data-parallax="scroll"
+         data-image-src="assets/images/banner_bg3.png">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="title_default_dark title_border">
+                    <h4 class="animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">Technical contributors</h4>
+                    <h4 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">技术团队</h4>
+                    <p class="animation" data-animation="fadeInUp"
+                       data-animation-delay="0s">In the spirit of transparency, and in the spirit of open-sourcing the Covalent project, we will start crediting major contributors with each technical module. Currently, most of the names here are members of the Covalent Foundation. Going forward, we expect to see more part-time contributors hailing from technical communities around the world.</p>
+                </div>
+                <div class="text-center animation img_md_hide img_lg_show"  data-animation="fadeInDown"
+                     data-animation-delay="0s">
+                    <img src="assets/images/team.svg" id="svg_team_animated" style="max-width: 900px;">
+                </div>
+                <div class="text-center animation img_md_show img_lg_hide" data-animation="fadeInDown"
+                     data-animation-delay="0s">
+                    <img src="assets/images/team_md_outlined.svg" style="max-width: 450px;">
+                </div>
+                <!--<div class="text-center animation" data-animation="fadeInDown"
+                     data-animation-delay="0s">
+                    <img src="assets/images/team_md_outlined.svg" style="max-width: 500px;">
+                </div>-->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END TECHNICAL CONTRIBUTORS SECTION -->
+
+<!-- START MEDIA SECTION -->
+<section class="section_media" id="media">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="title_default_dark title_border">
+                    <h4 class="animation us" data-animation="fadeInUp" data-animation-delay="0s">Featured Media</h4>
+                    <h4 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">媒体报道</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="blog_slider owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="blog_item animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                            <div class="blog_img">
+                                <a href="https://finance.yahoo.com/news/cova-welcomes-harvard-professors-board-054600772.html" target="_blank">
+                                    <img src="assets/images/media_yahoo_logo.png" alt="placeholder1">
+                                </a>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <h6 class="blog_title"><a
+                                            href="https://finance.yahoo.com/news/cova-welcomes-harvard-professors-board-054600772.html" target="_blank">COVA Welcomes Harvard Professors to Its Board of Advisors</a>
+                                    </h6>
+                                    <span class="text-capitalize media_subtitle">Yahoo! Finance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog_item animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                            <div class="blog_img">
+                                <a href="https://www.coinspeaker.com/led-by-iost-bluehill-and-fbg-capital-cova-is-rolling-out-internet-2-0/" target="_blank">
+                                    <img src="assets/images/media_coinspeaker_logo.png" alt="placeholder1">
+                                </a>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <h6 class="blog_title"><a
+                                            href="https://www.coinspeaker.com/led-by-iost-bluehill-and-fbg-capital-cova-is-rolling-out-internet-2-0/" target="_blank">Led by IOST/Bluehill and FBG Capital, COVA is Rolling Out ‘Internet 2.0’</a>
+                                    </h6>
+                                    <span class="text-capitalize media_subtitle">Coinspeaker</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog_item animation" data-animation="fadeInUp" data-animation-delay="0.6s">
+                            <div class="blog_img">
+                                <a href="https://www.morningstar.com/news/access-wire/ASW_Accesswire_510374MSN/cova-tries-to-upgrade-the-internet-with-smart-data.html" target="_blank">
+                                    <img src="assets/images/media_morningstar_logo.png" alt="placeholder1">
+                                </a>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <h6 class="blog_title"><a
+                                            href="https://www.morningstar.com/news/access-wire/ASW_Accesswire_510374MSN/cova-tries-to-upgrade-the-internet-with-smart-data.html" target="_blank">'COVA' Tries to Upgrade the Internet with 'Smart Data'</a>
+                                    </h6>
+                                    <span class="text-capitalize media_subtitle">Morningstar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog_item animation" data-animation="fadeInUp" data-animation-delay="0.8s">
+                            <div class="blog_img">
+                                <a href="https://www.nasdaq.com/press-release/cova-tries-to-upgrade-the-internet-with-smart-data-20180820-00559" target="_blank">
+                                    <img src="assets/images/media_nasdaq_logo.png" alt="placeholder1">
+                                </a>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <h6 class="blog_title"><a
+                                            href="https://www.nasdaq.com/press-release/cova-tries-to-upgrade-the-internet-with-smart-data-20180820-00559" target="_blank">'COVA' Tries to Upgrade the Internet with 'Smart Data'</a>
+                                    </h6>
+                                    <span class="text-capitalize media_subtitle">NASDAQ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog_item animation" data-animation="fadeInUp" data-animation-delay="1s">
+                            <div class="blog_img">
+                                <a href="https://www.leiphone.com/news/201807/iFfGM4rO6qmi8FOR.html" target="_blank">
+                                    <img src="assets/images/media_leiphone_logo.png" alt="placeholder1">
+                                </a>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <h6 class="blog_title"><a
+                                            href="https://www.leiphone.com/news/201807/iFfGM4rO6qmi8FOR.html" target="_blank">要做区块链时代的推动者，Covalent 让数据真正流通起来</a>
+                                    </h6>
+                                    <span class="text-capitalize media_subtitle">雷锋网</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog_item animation" data-animation="fadeInUp" data-animation-delay="0.6s">
+                            <div class="blog_img">
+                                <a href="https://36kr.com/newsflashes/125213" target="_blank">
+                                    <img src="assets/images/media_36kr_logo.png" alt="placeholder1">
+                                </a>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <h6 class="blog_title"><a
+                                            href="https://36kr.com/newsflashes/125213" target="_blank">Covalent获千万美金投资，真格基金、节点资本参投</a>
+                                    </h6>
+                                    <span class="text-capitalize media_subtitle">36氪</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog_item animation" data-animation="fadeInUp" data-animation-delay="0.7s">
+                            <div class="blog_img">
+                                <a href="https://www.jinse.com/lives/65777.htm" target="_blank">
+                                    <img src="assets/images/media_jinse_logo.png" alt="placeholder1">
+                                </a>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <h6 class="blog_title"><a
+                                            href="https://www.jinse.com/lives/65777.htm" target="_blank">COVA 入围火币创业板第二期项目名单</a></h6>
+                                    <span class="text-capitalize media_subtitle">金色财经</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END MEDIA SECTION -->
+
+<!-- START BACKED BY SECTION -->
+<section class="client_logo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title_default_dark title_border">
+                    <h4 class="animation us" data-animation="fadeInUp" data-animation-delay="0s">Backed by</h4>
+                    <h4 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">投资机构</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center text-center overflow_hide small_space">
+            <div class="col-lg-3 col-md-4 col-6 logo_border">
+                <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+                     data-animation="fadeInDown" data-animation-delay="0.1s">
+                    <img src="assets/images/client_zhenfund_logo.png" alt="ZhenFund logo"/>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 logo_border">
+                <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+                     data-animation="fadeInDown" data-animation-delay="0.2s">
+                    <img src="assets/images/client_huobicapital_logo.png" alt="HuobiCapital logo"/>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 logo_border">
+                <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+                     data-animation="fadeInDown" data-animation-delay="0.3s">
+                    <img src="assets/images/client_fbg_logo.png" alt="client_logo_dark_gray3"/>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 logo_border">
+                <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+                     data-animation="fadeInDown" data-animation-delay="0.4s">
+                    <img src="assets/images/client_kenetic_logo.png" alt="client_logo_dark_gray4"/>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 logo_border">
+                <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+                     data-animation="fadeInDown" data-animation-delay="0.5s">
+                    <img src="assets/images/client_metropolis_logo.png" alt="client_logo_dark_gray5"/>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 logo_border">
+                <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+                     data-animation="fadeInDown" data-animation-delay="0.6s">
+                    <img src="assets/images/client_nodecapital_logo.png" alt="client_logo_dark_gray6"/>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 logo_border">
+                <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+                     data-animation="fadeInDown" data-animation-delay="0.7s">
+                    <img src="assets/images/client_blockvc_logo.png" alt="client_logo_dark_gray7"/>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 logo_border">
+                <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+                     data-animation="fadeInDown" data-animation-delay="0.8s">
+                    <img src="assets/images/client_alphabit_logo.png" alt="client_logo_dark_gray8"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END BACKED BY SECTION -->
+
+
+<!-- START COVA TOKEN SECTION -->
+<section class="section_team" data-bleed="-40" data-z-index="1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="title_default_dark title_border">
+                    <h4 class="animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">COVA Token Metrics (%)</h4>
+                    <h4 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">技术团队 (%)</h4>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0s">
+                <div class="title_default_dark title_border">
+                    <p class="us">
+                        <strong>Private sale (20%)</strong><br>
+                        Primarily for long-term project funding
+                        <br><br>
+                        <strong>Team (15%)</strong><br>
+                        Incentive for top developer hires and the founding team
+                        <br><br>
+                        <strong>Foundation Reserve (10%)</strong><br>
+                        For marketing, PR, and business development
+                        <br><br>
+                        <strong>Huobi NEXT (4%)</strong><br>
+                        Voting rewards distributed to voters as incentives
+                        <br><br>
+                        <strong>Block Rewards (28%)</strong><br>
+                        Incentive for computing and routing nodes to join computations
+                        <br><br>
+                        <strong>Ecosystem (16%)</strong><br>
+                        Post main-net release ecosystem building reward for the community
+                        <br><br>
+                        <strong>Advisor (7%)</strong><br>
+                        Incentives for the world-leading experts in related fields
+                    </p>
+                    <p class="zh">
+                        <strong>私募投资（20%）</strong><br>
+                        用于项目发展长期资金支持
+                        <br><br>
+                        <strong>团队（15%）</strong><br>
+                        用于激励创始团队与顶级开发者加入
+                        <br><br>
+                        <strong>基金会运营（10%）</strong><br>
+                        用于市场推广、公共关系、商业合作
+                        <br><br>
+                        <strong>火币创业板投票活动（4%）</strong><br>
+                        用于激励火币创业板投票者
+                        <br><br>
+                        <strong>区块奖励（28%）</strong><br>
+                        用于激励算力、路由节点
+                        <br><br>
+                        <strong>生态建设（16%）</strong><br>
+                        用于主网上线后的生态建设
+                        <br><br>
+                        <strong>>顾问团队（7%）</strong><br>
+                        用于激励世界顶级专家学者加入
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-md-12 ">
+                <div class="title_default_dark">
+                    <canvas id="myChart_us" class="us"></canvas>
+                    <canvas id="myChart_zh" class="zh"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END COVA TOKEN SECTION -->
+
+<!-- START CONTACT SECTION -->
+<section id="contact" class="contact_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="title_default_dark title_border">
+                    <h4 class="animation us" data-animation="fadeInUp" data-animation-delay="0s">Contact</h4>
+                    <h4 class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">联系我们</h4>
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">For all general questions and comments, please contact us at</p>
+                    <p class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">如果您有任何合作、媒体需求，请联系</p>
+
+                </div>
+                <div class="lg_pt_20 res_sm_pt_20">
+                    <ul class="list_none contact_info info_contact text-center">
+                        <li class="animation" data-animation="fadeInDown" data-animation-delay="0s"
+                            style="width: 100% !important;">
+                            <a href="mailto:contact@covalent.ai" target="_blank">
+                            <i class="ion-ios-email animate-hover-grow-big"></i>
+                            </a>
+                            <div class="contact_detail"><span>Email</span>
+                                <p>contact@covalent.ai</p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="divider small_divider"></div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="title_default_dark title_border">
+                    <p class="animation us" data-animation="fadeInUp"
+                       data-animation-delay="0s">Join the conversation on</p>
+                    <p class="animation zh" data-animation="fadeInUp" data-animation-delay="0s">您可以通过以下社交媒体关注 COVA</p>
+                    <div class="divider small_divider img_md_show img_lg_hide"></div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 pr-0 res_md_pr_15">
+                <div class="lg_pt_20 res_sm_pt_0">
+                    <ul class="list_none contact_info info_contact text-center">
+                        <li class="animation" data-animation="fadeInDown" data-animation-delay="0.1s">
+                            <a href="https://t.me/covalentofficial" target="_blank">
+                                <i class="fab fa-telegram animate-hover-grow-big"></i>
+                                <div class="contact_detail"><span>Telegram</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="animation" data-animation="fadeInDown" data-animation-delay="0.2s">
+                            <a href="https://github.com/covalent-hq" target="_blank">
+                                <i class="fab fa-github animate-hover-grow-big"></i>
+                                <div class="contact_detail"><span>Github</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="animation" data-animation="fadeInDown" data-animation-delay="0.3s">
+                            <a href="https://gitter.im/covalent-hq/" target="_blank">
+                                <i class="fab fa-gitter animate-hover-grow-big"></i>
+                                <div class="contact_detail"><span>Gitter</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="animation" data-animation="fadeInDown" data-animation-delay="0.4s">
+                            <a href="https://medium.com/@covatoken" target="_blank">
+                                <i class="fab fa-medium animate-hover-grow-big"></i>
+                                <div class="contact_detail"><span>Medium</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="animation" data-animation="fadeInDown" data-animation-delay="0.5s">
+                            <a href="https://www.reddit.com/r/Covalent_Official/" target="_blank">
+                                <i class="fab fa-reddit animate-hover-grow-big"></i>
+                                <div class="contact_detail"><span>Reddit</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="animation" data-animation="fadeInDown" data-animation-delay="0.6s">
+                            <a href="https://twitter.com/covatoken" target="_blank">
+                                <i class="fab fa-twitter animate-hover-grow-big"></i>
+                                <div class="contact_detail">
+                                    <span>Twitter</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- END CONTACT SECTION -->
+
+
+<!-- START FOOTER SECTION -->
+<footer id="footer">
+    <div class="top_footer blue_light_bg" data-z-index="1" data-parallax="scroll"
+         data-image-src="assets/images/footer_bg.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12">
+                    <div class="newsletter_form">
+                        <h4 class="footer_title animation us" data-animation="fadeInUp"
+                            data-animation-delay="0.2s">Newsletter</h4>
+                        <h4 class="footer_title animation zh" data-animation="fadeInUp"
+                            data-animation-delay="0.2s">通讯</h4>
+                        <p class="animation us" data-animation="fadeInUp"
+                           data-animation-delay="0.4s">Get the latest news about COVA.</p>
+                        <p class="animation zh" data-animation="fadeInUp"
+                           data-animation-delay="0.4s">订阅 COVA 通讯，掌握 COVA 最新动态</p>
+                        <form action="https://covalent.us18.list-manage.com/subscribe/post-json?u=5d0fb48b27a59d9185c0f9159&amp;id=d61997b793&c=?" method="get" class="subscribe_form animation us" data-animation="fadeInUp" data-animation-delay="0.4s" target="_blank">
+                            <input class="input-rounded" type="email" required placeholder="Enter Email" name="EMAIL"/>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5d0fb48b27a59d9185c0f9159_d61997b793" tabindex="-1" value=""></div>
+                            <button type="button" title="Subscribe" class="btn-info" name="subscribe"
+                                    value="Submit"> Subscribe
+                            </button>
+                        </form>
+
+                        <form action="https://covalent.us18.list-manage.com/subscribe/post-json?u=5d0fb48b27a59d9185c0f9159&amp;id=d61997b793&c=?" method="get" class="subscribe_form animation zh" data-animation="fadeInUp" data-animation-delay="0.4s" target="_blank">
+                            <input class="input-rounded" type="email" required placeholder="您可填写电子邮件地址"/>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5d0fb48b27a59d9185c0f9159_d61997b793" tabindex="-1" value=""></div>
+                            <button type="button" title="Subscribe" class="btn-info" name="subscribe"
+                                    value="Submit"> 订阅
+                            </button>
+                        </form>
+                        <div id="newsletter_alert"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-8 res_md_mt_30 res_sm_mt_20">
+                    <h4 class="footer_title animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">Quick Links</h4>
+                    <h4 class="footer_title animation zh" data-animation="fadeInUp" data-animation-delay="0.1s">前往</h4>
+                    <ul class="footer_link half_link list_none res_sm_mb_30 zh">
+                        <li class="animation zh" data-animation="fadeInUp" data-animation-delay="0.1s"><a class="page-scroll"
+                            href="#home">主页</a></li>
+                        <li class="animation zh" data-animation="fadeInUp" data-animation-delay="0.2s"><a class="page-scroll"
+                                href="#tech">技术</a></li>
+                        <li class="animation zh" data-animation="fadeInUp" data-animation-delay="0.3s"><a class="page-scroll"
+                                href="#team">团队</a></li>
+                        <li class="animation zh" data-animation="fadeInUp" data-animation-delay="0.48s"><a class="page-scroll"
+                                href="#media">媒体</a></li>
+                        <li class="animation zh" data-animation="fadeInUp" data-animation-delay="0.5s"><a class="page-scroll"
+                                href="#contact">联系我们</a></li>
+                        <li class="animation zh" data-animation="fadeInUp" data-animation-delay="0.6s"><a class="page-scroll" href="https://blog.covalent.ai/" target="_blank">博客</a></li>
+                        <li class="animation zh" data-animation="fadeInUp" data-animation-delay="0.7s"><a class="page-scroll"
+                                href="https://docs.covalent.ai" target="_blank">测试网络</a></li>
+                        <li class="animation zh" data-animation="fadeInUp" data-animation-delay="0.8s"><a class="page-scroll"
+                                href="http://blocks.covalent.ai:3000">Cova 链</a></li>
+                    </ul>
+
+                    <ul class="footer_link half_link list_none res_sm_mb_30 us">
+                        <li class="animation us" data-animation="fadeInUp" data-animation-delay="0.1s"><a class="page-scroll"
+                                href="#home">Home</a></li>
+                        <li class="animation us" data-animation="fadeInUp" data-animation-delay="0.2s"><a class="page-scroll"
+                                href="#tech">Technology</a></li>
+                        <li class="animation us" data-animation="fadeInUp" data-animation-delay="0.3s"><a class="page-scroll"
+                                href="#team">Team</a></li>
+                        <li class="animation us" data-animation="fadeInUp" data-animation-delay="0.4s"><a class="page-scroll"
+                                href="#media">Media</a></li>
+                        <li class="animation us" data-animation="fadeInUp" data-animation-delay="0.5s"><a class="page-scroll"
+                                href="#contact">Contact</a></li>
+                        <li class="animation us" data-animation="fadeInUp" data-animation-delay="0.6s"><a class="page-scroll" href="https://blog.covalent.ai/" target="_blank">Blog</a></li>
+                        <li class="animation us" data-animation="fadeInUp" data-animation-delay="0.7s"><a class="page-scroll" href="https://docs.covalent.ai" target="_blank">Testnet</a></li>
+                        <li class="animation us" data-animation="fadeInUp" data-animation-delay="0.8s"><a class="page-scroll" href="http://blocks.covalent.ai:3000" target="_blank">Covachain</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-6 col-sm-4 res_md_mt_30 res_sm_mt_20">
+                    <h4 class="footer_title animation us" data-animation="fadeInUp"
+                        data-animation-delay="0s">Social</h4>
+                    <h4 class="footer_title animation zh" data-animation="fadeInUp"
+                        data-animation-delay="0s">社交媒体</h4>
+                    <ul class="footer_social list_none">
+                        <li class="animation us" data-animation="fadeInUp" data-animation-delay="0.1s"><a
+                                href="https://t.me/covalentofficial" ><i class="fab fa-telegram"></i> Telegram</a></li>
+                        <li class="animation us" data-animation="fadeInUp" data-animation-delay="0.2s"><a
+                                href="https://github.com/covalent-hq"><i class="fab fa-github"></i> Github</a></li>
+
+                        <li class="animation us" data-animation="fadeInUp" data-animation-delay="0.3s"><a
+                                href="https://gitter.im/covalent-hq/"><i class="fab fa-gitter"></i> Gitter</a></li>
+                        <li class="animation us" data-animation="fadeInUp" data-animation-delay="0.4s"><a
+                                href="https://medium.com/@covatoken"><i class="fab fa-medium"></i> Medium</a></li>
+                        <li class="animation us" data-animation="fadeInUp" data-animation-delay="0.5s"><a
+                                href="https://www.reddit.com/r/Covalent_Official/"><i
+                                class="fab fa-reddit"></i> Reddit</a></li>
+                        <li class="animation us" data-animation="fadeInUp" data-animation-delay="0.6s"><a
+                                href="https://twitter.com/covatoken"><i class="fab fa-twitter"></i> Twitter</a></li>
+
+
+                        <li class="animation zh" data-animation="fadeInUp" data-animation-delay="0.7s"><a
+                                href="https://t.me/covalentofficial"><i class="fab fa-telegram"></i> Telegram</a></li>
+                        <li class="animation zh" data-animation="fadeInUp" data-animation-delay="0.8s"><a
+                                href="https://github.com/covalent-hq"><i class="fab fa-github"></i> Github</a></li>
+                        <li class="animation zh" data-animation="fadeInUp" data-animation-delay="0.9s"><a
+                                href="https://medium.com/@covatoken"><i class="fab fa-medium"></i> Medium</a></li>
+                        <li class="animation zh" data-animation="fadeInUp" data-animation-delay="1s"><a
+                                href="https://www.reddit.com/r/Covalent_Official/"><i
+                                class="fab fa-reddit"></i> Reddit</a></li>
+                        <li class="animation zh" data-animation="fadeInUp" data-animation-delay="1.1s"><a
+                                href="https://twitter.com/covatoken"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="bottom_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="copyright us">Covalent &copy; 2018 All Rights Reserved.</p>
+                    <p class="copyright zh">Covalent &copy; 2018 保留所有权利</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list_none footer_menu">
+                        <li class="us"><a href="#" target="_blank">Privacy Policy</a></li>
+                        <li class="zh"><a href="#" target="_blank">隐私政策</a></li>
+                        <li class="us"><a href="#" target="_blank">Terms & Conditions</a></li>
+                        <li class="zh"><a href="#" target="_blank">服务条款</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER SECTION -->
+
+<a href="#" class="scrollup btn-default"><i class="ion-ios-arrow-up"></i></a>
+
+
+
+<!-- Latest jQuery -->
+<script src="assets/js/jquery-1.12.4.min.js"></script>
+
+<!-- Lottie.js (airbnb - for SVG animation)
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js"></script>
+<script src="assets/js/custom_anim.js"></script>-->
+
+<!-- jQuery UI-->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<!-- Latest compiled and minified Bootstrap -->
+<script src="assets/js/popper.min.js"></script>
+<!-- Latest compiled and minified Bootstrap -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- owl-carousel min js  -->
+<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+<!-- magnific-popup min js  -->
+<script src="assets/js/magnific-popup.min.js"></script>
+<!-- waypoints min js  -->
+<script src="assets/js/waypoints.min.js"></script>
+<!-- parallax js  -->
+<script src="assets/js/parallax.js"></script>
+<!-- particles min js  -->
+<script src="assets/js/particles.min.js"></script>
+<!-- scripts js -->
+<script src="assets/js/jquery.dd.min.js"></script>
+<!-- scripts js -->
+<script src="assets/js/scripts_181220.js"></script>
+
+<!-- Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+<!-- Prism.js -->
+<script src="assets/js/prism.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+<script src="assets/js/isInViewport.jquery.js"></script>
+
+<script src="assets/js/detectLang.js"></script>
+
+
+<script>
+
+    function createAnimatedTypedCode(code, text, after, newElementId, callback, typeSpeed) {
+        $(code).insertAfter(after);
+
+        if (typeSpeed !== undefined) {
+
+        }
+        else {
+            // argument not passed or undefined
+            typeSpeed = 20;
+        }
+        var options = {
+            strings: [text],
+            typeSpeed: typeSpeed,
+            cursorChar: '_',
+            onComplete: (self) => {
+                if (callback !== undefined) {
+                    callback();
+                }
+                else {
+                    // argument not passed or undefined
+                }
+
+                $("#prePolicy").find("span.typed-cursor").slice(1).hide();
+                $("#preSmartData").find("span.typed-cursor").slice(1).hide();
+
+
+            }
+        }
+
+        var typed = new Typed(newElementId, options);
+    }
+
+    function createSmartDataCode() {
+        createAnimatedTypedCode("<br><code id='codeCreateSmartDataCode' class='language-python'></code>", "smart_data = DataOwnerFileProcessor(file_path, policies).run()^1000", "#codeCreateSmartDataComment", "#codeCreateSmartDataCode", createSmartDataSuccess);
+    }
+
+    function createSmartDataSuccess() {
+        createAnimatedTypedCode("<br><br><code id='codeCreateSmartDataSuccess' class='language-python' style='color: #09ec86;'></code>", "> SMART DATA CREATED^1000", "#codeCreateSmartDataCode", "#codeCreateSmartDataSuccess", createRegisterComment, 0);
+    }
+
+    function createRegisterComment() {
+        createAnimatedTypedCode("<br><br><code id='codeCreateRegisterComment' class='language-python' style='color: slategray;'></code>", "# Register smart data on COVA^1000", "#codeCreateSmartDataSuccess", "#codeCreateRegisterComment", createRegisterCode);
+
+    }
+
+    function createRegisterCode() {
+        createAnimatedTypedCode("<br><code id='codeCreateRegisterCode' class='language-python'></code>", "DataOwnerSecretUploader(smart_data, download_link).run()^1000", "#codeCreateRegisterComment", "#codeCreateRegisterCode", createRegisterSuccess);
+
+    }
+
+    function createRegisterSuccess() {
+        createAnimatedTypedCode("<br><br><code id='codeCreateRegisterSuccess' class='language-python' style='color: #09ec86;'></code>", "> SMART DATA REGISTERED^1000", "#codeCreateRegisterCode", "#codeCreateRegisterSuccess", undefined, 0);
+
+    }
+
+    function createPolicyComment() {
+        createAnimatedTypedCode("<code id='codeCreatePolicyComment' class='language-python' style='color: slategray;'></code>", "# Utilize smart data with policy^1000", "#codeCreatePolicy", "#codeCreatePolicyComment", createPolicyCode);
+
+    }
+
+    function createPolicyCode() {
+        createAnimatedTypedCode("<br><code id='codeCreatePolicyCode' class='language-python'></code>", "computed_result = DataUserCodeExecute(data_hash,\n eth_pub_key, eth_private_key,\n timeout, code_file_path).run()^1000", "#codeCreatePolicyComment", "#codeCreatePolicyCode", createPolicySuccess);
+
+    }
+
+    function createPolicySuccess() {
+        createAnimatedTypedCode("<br><br><code id='codeCreatePolicySuccess' class='language-python' style='color: #09ec86;'></code>", "> SMART DATA SECURED WITH POLICY^1000", "#codeCreatePolicyCode", "#codeCreatePolicySuccess", undefined, 0);
+
+    }
+
+
+
+    $(document).ready(function () {
+
+        /* Subscribe UX Fix */
+        /* Keeps on the same page, doesn't redirect */
+        $("button[name=subscribe]").click(function(){
+            var $form = $('.subscribe_form');
+            $.ajax({
+                type: $form.attr('method'),
+                url: $form.attr('action'),
+                data: $form.serialize(),
+                cache: false,
+                dataType: 'jsonp',
+                contentType: "application/json; charset=utf-8",
+                error: function(err) { alert("Could not connect to the registration server. Please try again later."); },
+                success: function (data) {
+                    var index_split = data.msg.indexOf('<a');
+                    if (index_split > -1) {
+                        if (data.result != 'success') {
+                            var el = "<div class='alert-text alert-text-danger animated fadeInLeft'>> " + data.msg.slice(0, index_split) + "<br>" + data.msg.slice(index_split) +"</div>";
+                        } else {
+                            var el = "<div class='alert-text alert-text-success animated fadeInLeft'>> Subscribed!</div>";
+                        }
+                    } else {
+                        var el = "<div class='alert-text alert-text-info animated fadeInLeft'>> " + data.msg + "</div>";
+
+                    }
+
+                    $("#newsletter_alert").html(el);
+                }
+            });
+        });
+
+        var alreadyShowedLayerSVG = 0;
+        $('#svg_layer_animated').isInViewport(function (status) {
+            if (status === 'entered' && alreadyShowedLayerSVG == 0) {
+
+
+                $("#svg_layer_animated").show();
+                setTimeout(function(){
+                    $("#svg_layer_animated").attr("src","assets/images/cova_protocol_layers_anim.svg");
+                }, 400);
+
+                console.log("IN VIEW SVG");
+                /*alreadyShowedLayerSVG = 1;*/
+            }
+            else
+            {
+                $("#svg_layer_animated").attr("src","assets/images/cova_protocol_layers_anim_begin_old.svg");
+            }
+
+        });
+
+        var alreadyShowedTeamSVG = 0;
+        $('#svg_team_animated').isInViewport(function (status) {
+            if (status === 'entered' && alreadyShowedTeamSVG  == 0) {
+
+
+                $("#svg_team_animated").show();
+                setTimeout(function(){
+                    $("#svg_team_animated").attr("src","assets/images/team_anim.svg");
+                }, 400);
+
+                /*alreadyShowedLayerSVG = 1;*/
+            }
+            else
+            {
+                $("#svg_team_animated").attr("src","assets/images/team.svg");
+            }
+
+        });
+
+        /*TYPED ANIMATION STARTS*/
+
+
+
+        //createCommentTypedAnim();
+
+        var smartDataAlreadyShowed = 0
+        $('#preSmartData').isInViewport(function (status) {
+            if (status === 'entered' && smartDataAlreadyShowed == 0) {
+                createAnimatedTypedCode("<code id='codeCreateSmartDataComment' class='language-python' style='color: slategray;'></code>", "# Create smart data^1000", "#codeCreateSmartData", "#codeCreateSmartDataComment", createSmartDataCode);
+                smartDataAlreadyShowed = 1;
+            }
+
+        });
+
+        var policyAlreadyShowed = 0
+        $('#prePolicy').isInViewport(function (status) {
+            if (status === 'entered' && policyAlreadyShowed == 0) {
+                createPolicyComment();
+                policyAlreadyShowed = 1;
+            }
+        });
+
+
+        /*TYPED ANIMATION ENDS*/
+
+        var alreadyShowedEnglish = 0;
+        $('#myChart_us').isInViewport(function (status) {
+            if (status === 'entered' && alreadyShowedEnglish == 0) {
+                drawEnglishChart();
+                alreadyShowedEnglish = 1;
+            }
+
+        });
+
+        var alreadyShowedChina = 0;
+        $('#myChart_zh').isInViewport(function (status) {
+            if (status === 'entered' && alreadyShowedChina == 0) {
+                drawChineseChart();
+                alreadyShowedChina = 1;
+            }
+
+        });
+        /* SHOW ENGLISH CHART REGARDLESS */
+
+        /* OWL CAROUSEL CUSTOM STYLE */
+        $(".announcement_slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 6000,
+            autoplayHoverPause: true,
+            dots: false,
+            responsiveClass: true,
+            smartSpeed: 450,
+            margin: 10,
+            nav: true,
+            navText: ["<i style='font-size: 1.5rem;' class='fas fa-angle-left'></i>", "<i  style='font-size: 1.5rem;' class='fas fa-angle-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: true
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: true
+                }
+            }
+        });
+
+        $('.zh').hide();
+
+        var lang;
+
+        $(".nav_item").click(function (e) {
+
+            console.log(event.target.id);
+            if (event.target.id === 'testnet_nav' || event.target.id === 'testnet_nav_zh') {
+                var win = window.open('https://docs.covalent.ai', '_blank');
+                win.focus();
+                /*location.replace("https://docs.covalent.ai");*/
+            }
+            else if (event.target.id === 'covachain_nav' || event.target.id === 'covachain_nav_zh') {
+                var win = window.open('http://status.covalent.ai:3030/d/VI5BaaPiz/cova-network-status?refresh=30s&orgId=1', '_blank');
+                win.focus();
+                /*location.replace("http://blocks.covalent.ai:3000");*/
+            }
+            else if(event.target.id === 'blog_nav' || event.target.id === 'blog_nav_zh') {
+                var win = window.open('https://blog.covalent.ai/', '_blank');
+                win.focus();
+            }
+            else {
+                $(".nav_item").removeClass('active');
+                $target = $(event.target);
+                $target.addClass('active');
+            }
+        });
+
+        $("#lng_select").change(function () {
+
+            lang = $('#lng_select').val();
+
+            var op_lang = lang == 'zh' ? 'us' : 'zh';
+
+            $('.' + lang).show();
+            $('.' + op_lang).hide();
+
+            if (lang === 'us') {
+                drawEnglishChart();
+                $('.video').attr('href', 'https://www.youtube.com/watch?v=KYMddDJPVI8');
+            }
+            else {
+                drawChineseChart();
+                $('.video').attr('href', 'https://v.qq.com/x/page/k08020rcvug.html');
+            }
+
+            if (lang == 'zh') {
+                $('#lng_select_mobile_child').find('ul').find('li:nth-child(1)').removeClass('selected');
+                $('#lng_select_mobile_child').find('ul').find('li:nth-child(2)').addClass('selected');
+                $('#lng_select_mobile_child').find('ul').find('li:nth-child(2)').click();
+            }
+            else {
+                $('#lng_select_mobile_child').find('ul').find('li:nth-child(2)').removeClass('selected');
+                $('#lng_select_mobile_child').find('ul').find('li:nth-child(1)').addClass('selected');
+                $('#lng_select_mobile_child').find('ul').find('li:nth-child(1)').click();
+            }
+        });
+
+        $("#lng_select_mobile").change(function () {
+
+            lang = $('#lng_select_mobile').val();
+
+            var op_lang = lang == 'zh' ? 'us' : 'zh';
+
+
+            $('.' + lang).show();
+            $('.' + op_lang).hide();
+
+            if (lang === 'us') {
+                drawEnglishChart();
+                $('.video').attr('href', 'https://www.youtube.com/watch?v=KYMddDJPVI8');
+            }
+            else {
+                drawChineseChart();
+                $('.video').attr('href', 'https://v.qq.com/x/page/k08020rcvug.html');
+            }
+
+            if (lang == 'zh') {
+                $('#lng_select_child').find('ul').find('li:nth-child(1)').removeClass('selected');
+                $('#lng_select_child').find('ul').find('li:nth-child(2)').addClass('selected');
+                $('#lng_select_child').find('ul').find('li:nth-child(2)').click();
+            }
+            else {
+                $('#lng_select_child').find('ul').find('li:nth-child(2)').removeClass('selected');
+                $('#lng_select_child').find('ul').find('li:nth-child(1)').addClass('selected');
+                $('#lng_select_child').find('ul').find('li:nth-child(1)').click();
+            }
+        });
+
+        // For nav highlight
+        // Cache selectors
+        var topMenu = $("#navbarSupportedContent"),
+            topMenuHeight = topMenu.outerHeight() + 15,
+            // All list items
+            menuItems = topMenu.find("a"),
+            // Anchors corresponding to menu items
+            scrollItems = menuItems.map(function () {
+                var link_selector = $($(this).attr("id")).selector;
+                var item = $($(this).attr("href"));
+                if (item.length) {
+                    return item;
+                }
+            }).filter(item => item.selector !== 'https://docs.covalent.ai');
+
+        $(window).scroll(function () {
+            var fromTop = $(this).scrollTop() + topMenuHeight;
+            var cur = scrollItems.map(function () {
+                if ($(this).offset().top < fromTop)
+                    return this;
+            });
+
+            cur = cur[cur.length - 1];
+            // cur[0].id !== 'testnet_nav' || cur[0].id !== 'testnet_nav_zh' || cur[0].id !== 'covachain_nav' || cur[0].id !== 'covachain_nav_zh')
+            var id = cur && cur.length ? cur[0].id : "";
+            $(".nav_item").removeClass('active');
+            // Set/remove active class
+            // console.log(menuItems);
+            if (lang === 'zh') {
+                $("#" + id + "_nav_zh").addClass('active');
+            }
+            else {
+                $("#" + id + "_nav").addClass('active');
+            }
+        });
+
+
+    });
+
+
+    /* EQUAL HEIGHT ANNOUNCEMENT ITEM */
+    function fixButtonHeights() {
+        var heights = new Array();
+        console.log("Fixing all heights");
+
+        // Loop to get all element heights
+        $('.announcement_content').each(function () {
+            // Need to let sizes be whatever they want so no overflow on resize
+            $(this).css('min-height', '0');
+            $(this).css('max-height', 'none');
+            $(this).css('height', 'auto');
+
+            // Then add size (no units) to array
+            heights.push($(this).height());
+        });
+
+        // Find max height of all elements
+        var max = Math.max.apply(Math, heights);
+
+        // Set all heights to max height
+        $('.announcement_content').each(function () {
+            $(this).css('height', max + 'px');
+            // Note: IF box-sizing is border-box, would need to manually add border and padding to height (or tallest element will overflow by amount of vertical border + vertical padding)
+        });
+    }
+
+
+    (function ($) {
+        $(window).load(function () {
+            // Fix heights on page load
+            fixButtonHeights();
+
+            $(window).resize(function()
+            {
+                setTimeout(function() {
+                    fixButtonHeights();
+                }, 100);
+            });
+        });
+    })(jQuery);
+
+
+    function drawChineseChart() {
+        Chart.defaults.global.defaultFontFamily = 'Poppins, sans-serif', Chart.defaults.global.defaultFontColor = "#292b2c";
+        var ctx = document.getElementById('myChart_zh').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'doughnut',
+            // The data for our dataset
+            data: {
+
+                datasets: [{
+                    data: [20, 15, 10, 4, 28, 16, 7],
+                    backgroundColor: ['#ba76d8', '#80539c', '#36feac', '#23a973', '#3b8a99', '#275d66', '#8b3954'],
+                    borderColor: [
+                        'rgba(255,255,255,0.5)',
+                        'rgba(255,255,255,0.5)',
+                        'rgba(255,255,255,0.5)',
+                        'rgba(255,255,255,0.5)',
+                        'rgba(255,255,255,0.5)',
+                        'rgba(255,255,255,0.5)',
+                        'rgba(255,255,255,0.5)',
+                    ],
+                    borderWidth: 0,
+                    label: 'Token metrics'
+                }],
+
+                labels: ["私募投资", "团队", "运营", "火币创业板投票激励", "区块链奖励", "生态建设", "顾问"],
+
+            },
+
+            // Configuration options go here
+            options: {
+                responsive: true,
+                legend: {
+                    display: true,
+                    position: "left",
+                },
+                title: {
+                    display: false,
+                    text: 'Token Metrics (%)'
+                },
+                pieceLabel: {
+                    render: 'percentage',
+                    fontColor: ['#ba76d8', '#80539c', '#36feac', '#23a973', '#3b8a99', '#275d66', '#8b3954'],
+                    fontSize: 16,
+                    fontStyle: 'bold',
+                    position: 'outside',
+                    precision: 2
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true
+                },
+                tooltips: {
+                    callbacks: {
+                        label: function (tooltipItem, data) {
+                            var dataset = data.datasets[tooltipItem.datasetIndex];
+                            var total = dataset.data.reduce(function (previousValue, currentValue, currentIndex, array) {
+                                return previousValue + currentValue;
+                            });
+                            var currentValue = dataset.data[tooltipItem.index];
+                            var percentage = Math.floor(((currentValue / total) * 100) + 0.5);
+                            return data.labels[tooltipItem.index] + ": " + percentage + "%";
+                        }
+                    }
+                }
+            },
+
+
+        });
+
+    }
+
+    function drawEnglishChart() {
+        Chart.defaults.global.defaultFontFamily = 'Poppins, sans-serif', Chart.defaults.global.defaultFontColor = "#292b2c";
+        var ctx = document.getElementById('myChart_us').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'doughnut',
+            // The data for our dataset
+            data: {
+
+                datasets: [{
+                    data: [20, 15, 10, 4, 28, 16, 7],
+                    backgroundColor: ['#ba76d8', '#80539c', '#36feac', '#23a973', '#3b8a99', '#275d66', '#8b3954'],
+                    borderColor: [
+                        'rgba(255,255,255,0.5)',
+                        'rgba(255,255,255,0.5)',
+                        'rgba(255,255,255,0.5)',
+                        'rgba(255,255,255,0.5)',
+                        'rgba(255,255,255,0.5)',
+                        'rgba(255,255,255,0.5)',
+                        'rgba(255,255,255,0.5)',
+                    ],
+                    borderWidth: 0,
+                    label: 'Token metrics'
+                }],
+
+                labels: ["Private Sale", "Team", "Reserve", "Huobi Next", "Block Reward", "Ecosystem", "Advisor"],
+
+            },
+
+            // Configuration options go here
+            options: {
+                responsive: true,
+                legend: {
+                    display: true,
+                    position: "left",
+                },
+                title: {
+                    display: false,
+                    text: 'Token Metrics (%)'
+                },
+                pieceLabel: {
+                    render: 'percentage',
+                    fontColor: ['#ba76d8', '#80539c', '#36feac', '#23a973', '#3b8a99', '#275d66', '#8b3954'],
+                    fontSize: 16,
+                    fontStyle: 'bold',
+                    position: 'outside',
+                    precision: 2
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true
+                },
+                tooltips: {
+                    callbacks: {
+                        label: function (tooltipItem, data) {
+                            var dataset = data.datasets[tooltipItem.datasetIndex];
+                            var total = dataset.data.reduce(function (previousValue, currentValue, currentIndex, array) {
+                                return previousValue + currentValue;
+                            });
+                            var currentValue = dataset.data[tooltipItem.index];
+                            var percentage = Math.floor(((currentValue / total) * 100) + 0.5);
+                            return data.labels[tooltipItem.index] + ": " + percentage + "%";
+                        }
+                    }
+                }
+            },
+
+
+        });
+
+    }
+
+
+</script>
+</body>
+</html>

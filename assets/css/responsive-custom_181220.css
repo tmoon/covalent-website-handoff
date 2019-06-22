@@ -1,0 +1,395 @@
+/* -------------------------------------------------
+  min-width: 1200px
+---------------------------------------------------*/
+@media (min-width: 1200px)
+{
+
+
+    .announcement_item {
+
+        margin-top: 8px;
+    }
+}
+
+/* -------------------------------------------------
+  min-width: 991px and max-width: 1199px
+---------------------------------------------------*/
+@media only screen and (min-width: 991px) and (max-width: 1199px)
+{
+
+
+    .announcement_item {
+
+        margin-top: 8px;
+    }
+
+}
+
+/* -------------------------------------------------
+  min-width: 768px and max-width: 991px
+---------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+
+    .announcement_item {
+
+        margin-top: 8px;
+    }
+
+}
+
+/* -------------------------------------------------
+  max-width: 1600px
+---------------------------------------------------*/
+@media only screen and (max-width: 1600px)
+{
+
+    .announcement_item {
+
+        margin-top: 8px;
+    }
+
+}
+
+/* -------------------------------------------------
+  max-width: 1440px
+---------------------------------------------------*/
+@media only screen and (max-width: 1440px)
+{
+
+    .announcement_item {
+
+        margin-top: 8px;
+    }
+
+}
+
+/* -------------------------------------------------
+  max-width: 1199px
+---------------------------------------------------*/
+@media only screen and (max-width: 1199px)
+{
+
+
+    .announcement_item {
+
+        margin-top: 8px;
+    }
+}
+
+/* -------------------------------------------------
+  width: 1920px
+---------------------------------------------------*/
+@media only screen and (width: 1920px)
+{
+
+    .cova_logo_big
+    {
+        max-width: 360px !important;
+    }
+
+    .cova_graphical_logo_big {
+        max-width: 180px !important;
+    }
+}
+
+/* -------------------------------------------------
+  min-width: 991px
+---------------------------------------------------*/
+@media only screen and (min-width: 991px)
+{
+
+    .announcement_item {
+
+        margin-top: 8px;
+    }
+
+    /* -------------------------------------------------
+      Custom @author Nabil Rahman
+    ---------------------------------------------------*/
+    .img_lg_show
+    {
+        display: block;
+    }
+
+    .img_lg_hide
+    {
+        display: none;
+
+    }
+
+
+}
+
+/* -------------------------------------------------
+  max-width: 991px
+---------------------------------------------------*/
+@media only screen and (max-width: 991px)
+{
+    /* FIXES HEADING ICONS CENTERING ISSUE FOR SMALLER SCREEN */
+    .heading-icons-column
+    {
+        padding-left: 0px !important;
+    }
+
+
+    .announcement_item {
+
+        margin-top: 8px;
+    }
+
+    .cova_md_logo_big
+    {
+        width: 260px !important;
+    }
+
+    .cova_md_graphical_logo_big
+    {
+        width: 130px !important;
+    }
+
+
+
+    .img_md_show
+    {
+        display: block;
+    }
+
+    .img_md_hide
+    {
+        display: none;
+    }
+
+    .logo_light
+    {
+        width: 60px !important;
+    }
+
+    .section_subtitle
+    {
+        margin-top: 15px;
+    }
+
+}
+
+
+/* -------------------------------------------------
+  max-width: 767px
+---------------------------------------------------*/
+@media only screen and (max-width: 767px)
+{
+
+    .announcement_item {
+
+        margin-top: 8px;
+    }
+
+    .cova_md_logo_big
+    {
+        width: 200px !important;
+    }
+
+    .cova_md_graphical_logo_big
+    {
+        width: 100px !important;
+    }
+
+    .cova_logo_title
+    {
+        font-size: 16px;
+    }
+
+}
+
+/* -------------------------------------------------
+  max-width: 640px
+---------------------------------------------------*/
+@media only screen and (max-width: 640px)
+{
+
+    .announcement_item {
+
+        margin-top: 8px;
+    }
+
+}
+
+/* -------------------------------------------------
+  max-width: 580px
+---------------------------------------------------*/
+@media only screen and (max-width: 580px)
+{
+    /* MAKES HEADING BUTTONS AND DROPDOWS SAME SIZED FOR TABLET */
+    .heading_button, .heading_buttons_dropdown, .telegram_dropdown
+    {
+        width: 278px !important;
+        text-align: center;
+    }
+
+    /* FIXES HEADING ICONS CENTERING ISSUE FOR SMALLER SCREEN */
+    .heading-icons-column
+    {
+        padding-left: 0px;
+    }
+
+    /*TO KEEP THE STYLE: DECREASE LOGO PADDING WHEN 480px*/
+    .cova_logo_subtitle_banner
+    {
+        padding-bottom: 0.5rem !important;
+    }
+
+    .cova_graphical_logo_big
+    {
+        padding-bottom: 0.5rem
+    }
+
+    .btn_group
+    {
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+    }
+
+
+    .heading-icons li i {
+        margin-bottom: 0px !important; ;
+        margin-top: 5px;
+    }
+
+    .contact_info.info_contact li {
+        width: 33.3% !important;
+    }
+
+    .section_subtitle
+    {
+        margin-top: 20px !important;
+    }
+
+    .custom_divider
+    {
+        height: 0px;
+    }
+}
+
+/* -------------------------------------------------
+  max-width: 480px
+---------------------------------------------------*/
+@media only screen and (max-width: 480px)
+{
+    .lng_dropdown .dd.ddcommon {
+        cursor:pointer;
+        padding-right: 10px;
+        position: relative;
+        width: 72px !important;
+       
+    }
+
+    /* MAKES HEADING BUTTONS AND DROPDOWS SAME SIZED FOR MOBILE*/
+    .heading_button, .heading_buttons_dropdown, .telegram_dropdown
+    {
+        width: 236px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* FIXES HEADING ICONS CENTERING ISSUE FOR SMALLER SCREEN */
+    .heading-icons-column
+    {
+        padding-left: 0px;
+    }
+
+    .announcement_text a {
+        font-size: 14px;
+    }
+
+    /*DECREASE LOGO PADDING WHEN 480px*/
+    .cova_logo_subtitle_banner
+    {
+        padding-bottom: 0.7rem !important;
+    }
+
+    .cova_graphical_logo_big
+    {
+        padding-bottom: 0.5rem
+    }
+
+    .heading-icons li i {
+        margin-bottom: 0px !important;
+        margin-top: 5px;
+    }
+
+    .contact_info.info_contact li {
+        width: 33.3% !important;
+    }
+
+    .section_subtitle
+    {
+        margin-top: 20px !important;
+    }
+
+    .custom_divider
+    {
+        height: 0px;
+    }
+
+    .section_banner {
+        padding: 75px 0 30px;
+        padding-bottom: 30px;
+    }
+}
+
+/* -------------------------------------------------
+  max-width: 380px
+---------------------------------------------------*/
+@media only screen and (max-width: 380px)
+{
+
+
+   /* .heading-icons-wrapper
+    {
+        padding-top: 0.1rem !important;
+    }*/
+
+    .heading-icons li i {
+        margin-bottom: 0px !important;
+    }
+
+    .btn_group .btn {
+        margin: 0px 0;
+/*        margin-right: 0px;
+        margin-bottom: 5px;*/
+    }
+
+    .contact_info.info_contact li {
+        width: 33.3% !important;
+    }
+
+    .section_subtitle
+    {
+        margin-top: 20px !important;
+    }
+
+    .custom_divider
+    {
+        height: 0px;
+    }
+
+
+}
+
+/* -------------------------------------------------
+  min-width: 380px
+---------------------------------------------------*/
+@media only screen and (min-width: 380px)
+{
+
+    .cova_logo_subtitle_banner
+    {
+        padding-bottom: 1rem;
+    }
+
+    .cova_graphical_logo_big
+    {
+        padding-bottom: 1rem
+    }
+}
+
